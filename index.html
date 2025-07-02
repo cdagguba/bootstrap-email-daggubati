@@ -5,112 +5,120 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="email-practice-2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+
     <nav class="navbar mytopbar navbar-expand-md">
-<div class="container-xxl">
-  <a href="#intro" class="navbar-brand">
-<span class="fw-bold text-primary">
- <h1 class=ms-5>Messages</h1> 
-</span>
-
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> 
-
-<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link my-2" href="#compose">Compose</a>
-    </li>
-  
-      </nav></a> 
-
-    <div class="container-fluid my-container">
-        <div class="row my-row">
-            <div class="col-12 col-sm-2 col-lg-2 my-col d-none d-sm-block nav-bar text-center">
-        
-                <div>
-                  <button type="button my-button">Inbox</button><br>
-                  <button type="button my-button">Sent</button><br>
-                  <button type="button my-button">Drafts</button> <br>
-                  <button type="button my-button">Trash</button>
-                </div>
-            </div>
-            <div class="col-12 col-sm-10 col-lg-10 my-col">
-                <div class="row h-100">
-               
-                <div class="col-12 col-lg-5 half-height">
-                      <a href="#" class="list-group-item list-group-item-action"  
-                      onMouseOver="this.style.color='#ff0000'"
-                      onMouseOut="this.style.color='#000'" >
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Lando Norris</h5>
-                          <small>4 min ago</small>
-                        </div>
-                        <p class="mb-1">Subject</p>
-                        <small>Body Text, Body Text, Body Text</small>
-                      </a> <hr> <hr>
-                      <a href="#" class="list-group-item list-group-item-action"
-                      onMouseOver="this.style.color='#ff0000'"
-                      onMouseOut="this.style.color='#000'">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Max Verstappen</h5>
-                          <small>2 hrs ago</small>
-                        </div>
-                        <p class="mb-1">Subject</p>
-                        <small>Body Text, Body Text, Body Text</small>
-                      </a> <hr> <hr>
-                      <a href="#" class="list-group-item list-group-item-action"
-                      onMouseOver="this.style.color='#ff0000'"
-                      onMouseOut="this.style.color='#000'">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Lewis Hamilton</h5>
-                          <small>1 day ago</small>
-                        </div>
-                        <p class="mb-1">Subject</p>
-                        <small>Body Text, Body Text, Body Text</small>
-                      </a> <hr> <hr>
-                      <a href="#" class="list-group-item list-group-item-action"
-                      onMouseOver="this.style.color='#ff0000'"
-                      onMouseOut="this.style.color='#000'">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">Isack Hadjar</h5>
-                          <small>4 days ago</small>
-                        </div>
-                        <p class="mb-1">Subject</p>
-                        <small>Body Text, Body Text, Body Text</small> 
-                      </a> <hr> <hr>
-                    </div>  
-                    <div class="col-12 col-lg-7 half-height email-content">
-                      <div>
-                        <h1>Subject</h1>
-                        <h5>lando4n@gmail.com</h5> <br>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p> 
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
-                        <br> <hr>
-                        <div class="reply-buttons text-center">
-                          <a href="#" class="btn btn-primary">Reply</a>  
-                          <a href="#" class="btn btn-primary">Reply all</a>
-                          <a href="#" class="btn btn-primary">Forward email</a>
-                        </div>
-                      </div>
-                    </div>  
-
-                </div>
-            </div>
+      <div class="container-xxl navbar-container">
+        <a href="#intro" class="navbar-brand">
+          <span class="brand-heading">
+            <h1>Messages</h1>
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#compose">Compose</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trash">Trash</a>
+            </li>
+          </ul>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      </div>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <div class="container-fluid main-container">
+      <div class="row main-row">
+
+        <div class="col-12 col-sm-2 col-lg-2 sidebar">
+          <div>
+            <button type="button" class="sidebar-button">Inbox</button><hr>
+            <button type="button" class="sidebar-button">Read All</button><hr>
+            <button type="button" class="sidebar-button">Sent</button><hr>
+            <button type="button" class="sidebar-button">Drafts</button><hr>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 col-lg-10 content-area">
+          <div class="row email-layout">
+            <div class="col-12 col-lg-5 email-list">
+              <a href="#" class="email-link">
+                <div class="email-header">
+                  <h5>Lando Norris</h5>
+                  <small>4 min ago</small>
+                </div>
+                <p class="email-subject">Subject</p>
+                <small>Body Text, Body Text, Body Text</small>
+              </a>
+              <hr><hr>
+
+              <a href="#" class="email-link">
+                <div class="email-header">
+                  <h5>Max Verstappen</h5>
+                  <small>2 hrs ago</small>
+                </div>
+                <p class="email-subject">Subject</p>
+                <small>Body Text, Body Text, Body Text</small>
+              </a>
+              <hr><hr>
+
+              <a href="#" class="email-link">
+                <div class="email-header">
+                  <h5>Lewis Hamilton</h5>
+                  <small>1 day ago</small>
+                </div>
+                <p class="email-subject">Subject</p>
+                <small>Body Text, Body Text, Body Text</small>
+              </a>
+              <hr><hr>
+
+              <a href="#" class="email-link">
+                <div class="email-header">
+                  <h5>Isack Hadjar</h5>
+                  <small>4 days ago</small>
+                </div>
+                <p class="email-subject">Subject</p>
+                <small>Body Text, Body Text, Body Text</small> 
+              </a>
+              <hr><hr>
+            </div>
+
+            <div class="col-12 col-lg-7 email-content">
+              <div class="email-body">
+                <h1 class="email-subject-heading">Subject</h1>
+                <h5 class="email-from">lando4n@gmail.com</h5>
+                <br>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <p>EXAMPLE BODY TEXT EXAMPLE BODY TEXT</p>
+                <br><hr>
+                <div class="reply-buttons">
+                  <a href="#" class="btn-reply">Reply</a>  
+                  <a href="#" class="btn-reply">Forward</a>
+                  <a href="#" class="btn-reply">Delete</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
